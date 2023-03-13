@@ -10,3 +10,5 @@ plt.xlabel("x os")
 plt.ylabel("y os")
 plt.title("Primjer")
 plt.show()
+
+

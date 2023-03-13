@@ -9,3 +9,7 @@ stack2=np.vstack((w,b))
 img=np.hstack((stack2,stack1))
 plt.imshow(img, cmap="gray")
 plt.show()
+
+
+
+

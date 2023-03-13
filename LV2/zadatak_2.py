@@ -39,3 +39,13 @@ print('Max ženski ',max(b))
 print('Min ženski ',min(b))
 print('Srednja vrijednost ženski ',np.mean(b))
 
+
+
+
+
+
+
+
+
+
+

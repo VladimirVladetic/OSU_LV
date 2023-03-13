@@ -16,3 +16,6 @@ plt.show()
 
 plt.imshow(np.fliplr(img),cmap="gray")
 plt.show()
+
+
+
