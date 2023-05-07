@@ -1,11 +1,10 @@
-import numpy as np 
-import matplotlib.pyplot as plt 
+import numpy as np
+import matplotlib.pyplot as plt
 
-b=np.ones((50,50))
-w=np.zeros((50,50))
-
-stack1=np.vstack((b,w))
-stack2=np.vstack((w,b))
-img=np.hstack((stack2,stack1))
-plt.imshow(img, cmap="gray")
+white=np.ones((50,50))
+black=np.zeros((50,50))
+stack1=np.hstack((black,white))
+stack2=np.hstack((white,black))
+img=np.vstack((stack1,stack2))
+plt.imshow(img,cmap="gray")
 plt.show()

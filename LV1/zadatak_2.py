@@ -1,4 +1,3 @@
-
 while(1):
     try:
         x = float(input())
