@@ -1,0 +1,14 @@
+LV1 - Uvod u Pythonm, zad 4 Dictionary
+LV2 - Zad 2 Uvod u Numpy, Zad 3 manipulacija slika
+LV3 - Zad 1 Uvod u Pandas, Zad 2 uvod u grafove (scatter)
+LV4 - Zad 1 transformacija/standardizacija podataka, model linearne regresije, regresijske metrike
+      Zad 2 OneHotEncoder, polje razlika
+LV5 - Zad 1 model logističke regresije, parametri modela, crtanje granice odluke, matrica zabune, računanje točnosti itd
+      Zad 2 pregled izostalih vrijednosti, micanje duplikata, 
+LV6 - KNN i SVM, GridSearch za najbolju verziju modela
+LV7 - Zad 1 Kmeans algoritam, bojanje u scatteru ovisno o grupi/klasifikaciji
+      Zad 2 kvantizacija slika, binarne slike, prikaz Elbow metode
+LV8 - Zad 1 Keras MNIST, skaliranje slika, keras model, Sequential, compile parametri, transformacija polja sa argmax, spremanje modela
+      Zad 2 učitavanje modela, stvaranje polja sa greškama
+      Zad 3 učitavanje svoje slike, prilagođavanje te slike
+LV9 - CNN mreža, layers, Dropout, Early Stopping, Tensorboard Ctrl+Shift+P, .evaluate funkcija  

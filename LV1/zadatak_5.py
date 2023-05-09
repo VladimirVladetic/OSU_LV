@@ -1,4 +1,3 @@
-
 ham_counter=0
 ham_word_counter=0
 spam_word_counter=0

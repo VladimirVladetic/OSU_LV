@@ -24,12 +24,12 @@ plt.imshow(img[:,160:320],cmap="gray")
 plt.title("Prikaz druge četvrtine slike po širini")
 plt.show()
 
-#c)
+#c) Rotirana slika 
 plt.imshow(np.rot90(img,3),cmap="gray")
 plt.title("Rotirana slika za 90° u smjeru kazaljke na saatu")
 plt.show()
 
-#d)
+#d) Inverz slike
 plt.imshow(np.fliplr(img),cmap="gray")
 plt.title("Inverz po y osi slika")
 plt.show()

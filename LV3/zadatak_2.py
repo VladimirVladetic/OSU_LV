@@ -8,13 +8,13 @@ data=pd.read_csv('LV3\data_C02_emission.csv')
 #Fuel Consumption Hwy (L/100km),Fuel Consumption Comb (L/100km),Fuel Consumption Comb (mpg),CO2 Emissions (g/km)
 
 
-#a)
+#a) Histogram
 data['CO2 Emissions (g/km)'].plot(kind='hist')
 plt.xlabel('CO2 Emissions (g/km)')
 plt.title('CO2 Emissions histogram')
 plt.show()
 
-#b)
+#b) Scatter
 colors=['r','g','b','c','y']
 gas=['X','Z','D','E','N']
 
@@ -25,17 +25,17 @@ for i in range(0,5):
     plt.scatter(x,y, c=colors[i], s=5 )
 plt.show()
 
-#c)
+#c) Boxplot
 data.boxplot(column = ['Fuel Consumption Hwy (L/100km)'], by = 'Fuel Type')
 plt.title('Razdioba izvangradske potrošnje goriva po tipu goriva')
 plt.show()
 
-#d)
+#d) Bar
 data.groupby('Fuel Type').size().plot(kind = 'bar')
 plt.title('Broj vozila po tipu goriva')
 plt.show()
 
-#e)
+#e) Bar
 data.groupby('Cylinders')['CO2 Emissions (g/km)'].mean().plot(kind = 'bar')
 plt.title('Prosječna emisija CO2 s obzirom na broj cilindara')
 plt.show()
