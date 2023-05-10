@@ -70,6 +70,9 @@ print(score)
 predictions=np.argmax(predictions, axis=1) 
 y_test_s=np.argmax(y_test_s, axis=1) 
 
+# Ako ne radi CM
+#predictions=np.around(predictions).astype(np.int32)
+
 # TODO: Prikazi test accuracy i matricu zabune
 
 print('Točnost:',accuracy_score(y_test_s,predictions))
