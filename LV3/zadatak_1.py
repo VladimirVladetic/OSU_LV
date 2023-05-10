@@ -9,6 +9,12 @@ print("Broj mjerenja u DataFrame:",len(data))
 
 print("Tipovi podataka za veličine:",data.dtypes)
 
+# Brisanje svih redova di nedostaje vrijednost
+#data.dropna(axis=0)
+# Brisanje duplikatskih redova
+#data.drop_duplicates()
+
+#p Provjera koliko ima izostalih vrijednosti
 print(data.isnull().sum())
 print("Nema izostalih vrijednosti")
 
