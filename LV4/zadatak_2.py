@@ -12,6 +12,7 @@ from sklearn.metrics import max_error
 from sklearn.preprocessing import OneHotEncoder
 
 data = pd.read_csv('LV4\data_C02_emission.csv')
+pd.set_option('display.max_columns', None)
 
 var_input = ['Fuel Consumption City (L/100km)',
              'Fuel Consumption Hwy (L/100km)',
@@ -25,7 +26,10 @@ var_output = ['CO2 Emissions (g/km)']
 
 ohe = OneHotEncoder ()
 X_encoded=ohe.fit_transform(data[['Fuel Type']]).toarray()
-data['Fuel Type'] = X_encoded
+
+labels=np.argmax(X_encoded,axis=1)
+
+data['Fuel Type'] = labels
 
 X=data[var_input]
 y=data[var_output]
